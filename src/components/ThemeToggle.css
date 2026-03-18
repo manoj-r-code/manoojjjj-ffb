@@ -1,0 +1,25 @@
+.theme-toggle-btn {
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #232526, #414345); /* Space-y gradient */
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  letter-spacing: 0.5px;
+  margin-right: 20px;
+}
+
+.theme-toggle-btn:hover {
+  background: linear-gradient(
+    145deg,
+    #3a3a3a,
+    #5a5a5a
+  ); /* Hover: smoother galaxy */
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}

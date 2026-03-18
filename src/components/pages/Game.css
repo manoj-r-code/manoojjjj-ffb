@@ -1,0 +1,27 @@
+/* GameBoard.css */
+.game-board {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px auto;
+  outline: none;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #f8f8f8;
+  transition: all 0.2s ease;
+}
+
+.cell.exit {
+  background-color: #e0ffe0;
+}

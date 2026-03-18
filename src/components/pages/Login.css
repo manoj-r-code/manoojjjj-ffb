@@ -1,0 +1,291 @@
+
+/*
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mandaic&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+.login-page {
+  background: linear-gradient(to bottom right, #634f5a, #9478c4);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+}
+
+.cat-avatar img {
+  width: 120px;
+  /* margin-bottom: 20px; *
+  animation: float 2s ease-in-out infinite;
+  margin-bottom: 0px;
+  border-radius: 50%;
+}
+.cat-avatar h2 {
+  margin-top: -18px;
+  margin-bottom: 0px;
+  font-family: Heebo;
+  color: rgb(42, 60, 25);
+  font-size: 2rem;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.login-form input {
+  width: 90%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 2px solid #f3d1d1;
+  border-radius: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #ff8baf;
+  outline: none;
+}
+
+.login-form button {
+  background-color: #ff8baf;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #e66794;
+}
+
+@media (max-width: 500px) {
+  .login-container {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 90%;
+  }
+
+  .cat-avatar img {
+    width: 80px;
+  }
+
+  .cat-avatar h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-form input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .login-form button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
+.register-link {
+  display: inline-block;
+  margin-left: 250px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff8baf;
+  color: #ffffff;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.register-link:hover {
+  background-color: #e66794;
+}
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@400;500&display=swap");
+
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+
+  background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Animated gradient movement */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating glowing orbs */
+.background span {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  animation: float 20s infinite ease-in-out alternate;
+}
+
+.background span:nth-child(1) {
+  width: 400px;
+  height: 400px;
+  background: #a855f7;
+  top: -100px;
+  left: -100px;
+}
+
+.background span:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  background: #6366f1;
+  bottom: -80px;
+  right: -80px;
+  animation-duration: 25s;
+}
+
+.background span:nth-child(3) {
+  width: 350px;
+  height: 350px;
+  background: #22d3ee;
+  top: 40%;
+  left: 60%;
+  animation-duration: 18s;
+}
+
+@keyframes float {
+  from {
+    transform: translate(-50px, -50px);
+  }
+  to {
+    transform: translate(50px, 50px);
+  }
+}
+
+/* Glass login card */
+.login-container {
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(138, 43, 226, 0.3);
+  transition: 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Branding */
+.brand-section h1 {
+  font-family: "Orbitron", sans-serif;
+  color: #a855f7;
+  margin-bottom: 0.4rem;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+}
+
+.brand-section p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* Inputs */
+.login-form input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.login-form input::placeholder {
+  color: #aaa;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 10px #a855f7;
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 0.8rem;
+  border: none;
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #a855f7;
+}
+
+/* Register link */
+.register-link {
+  display: block;
+  margin-top: 1.5rem;
+  color: #a855f7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.register-link:hover {
+  text-shadow: 0 0 8px #a855f7;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+}
