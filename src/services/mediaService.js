@@ -36,8 +36,8 @@
 
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/chintu/media";
-// const BASE_URL = "https://chintu-verse-bff.onrender.com/chintu/media";
+// const BASE_URL = "http://localhost:5000/chintu/media";
+const BASE_URL = "https://manoojjjj-bff.onrender.com/chintu/media";
 
 // 🔥 Helper to get auth headers
 const getAuthHeaders = () => {
@@ -55,7 +55,7 @@ export const uploadMedia = async (formData) => {
     const res = await axios.post(
       `${BASE_URL}/upload`,
       formData,
-      getAuthHeaders()
+      getAuthHeaders(),
     );
     return res.data;
   } catch (err) {
@@ -79,7 +79,7 @@ export const deleteMedia = async (id) => {
   try {
     const res = await axios.delete(
       `${BASE_URL}/delete/${id}`,
-      getAuthHeaders()
+      getAuthHeaders(),
     );
     return res.data;
   } catch (err) {

@@ -2,9 +2,8 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api/auth", // Adjust your backend URL if different
-  // baseURL: "https://chintu-verse-bff.onrender.com/api/auth", // Adjust your backend URL if different
-
+  // baseURL: "http://localhost:5000/api/auth", // Adjust your backend URL if different
+  baseURL: "https://manoojjjj-bff.onrender.com/api/auth", // Adjust your backend URL if different
 });
 
 // Add token automatically to every request
@@ -20,7 +19,7 @@ axiosInstance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 let isAdmin = false;
@@ -30,7 +29,7 @@ const token = localStorage.getItem("token");
 
 if (token) {
   try {
-    const decoded = jwtDecode (token); // { id, email, iat, exp }
+    const decoded = jwtDecode(token); // { id, email, iat, exp }
     // console.log("Decoded token:", decoded);
 
     userEmail = decoded.email;
