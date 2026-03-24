@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import {axiosInstance} from "../../services/axiosInstance";
-import chintucat from "../../assets/login-logo.jpg";
+import chintucat from "../../assets/login-logo.png";
 import { Link } from "react-router-dom";
 
 import { toast, ToastContainer } from "react-toastify";

@@ -58,14 +58,14 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <img src="/login-logo.jpg" alt="Cat Logo" className="cat-logo" />
-        <span className="brand-name">ChintuVerse</span>
+        <img src="/login-logo.png" alt="Cat Logo" className="cat-logo" />
+        <span className="brand-name">Manoojjj</span>
       </div>
       <div className="nav-center">
-        <Link to="/home">Home</Link>
+        <Link to="/home"></Link>
         <Link to="/gallery">Gallery</Link>
         {/* <Link to="/fav">Favourites</Link> */}
-        <Link to="/game">Game</Link>
+        <Link to="/game"></Link>
         {isAdmin ? (
         <Link to="/admin">Admin</Link>
       ) : (
