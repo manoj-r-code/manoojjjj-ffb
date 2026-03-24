@@ -1,13 +1,13 @@
 // import React, { useState } from "react";
 import "./Game.css";
 
-const initialGrid = [
-  [null, "book", null, null, "exit"],
-  [null, "book", null, "book", null],
-  [null, null, "cat", null, null],
-  [null, "book", null, null, null],
-  [null, null, null, null, null],
-];
+// const initialGrid = [
+//   [null, "book", null, null, "exit"],
+//   [null, "book", null, "book", null],
+//   [null, null, "cat", null, null],
+//   [null, "book", null, null, null],
+//   [null, null, null, null, null],
+// ];
 const GameBoard = () => {
   // const [grid, setGrid] = useState(initialGrid);
 
