@@ -22,7 +22,6 @@
 
 .cat-avatar img {
   width: 100px;
-  /* margin-bottom: 20px; */
   animation: float 2s ease-in-out infinite;
   margin-bottom: 0px;
   border-radius: 50%;
