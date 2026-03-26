@@ -57,7 +57,7 @@ function Register() {
       <div className="register-container">
         <div className="cat-avatar">
           <img src={chintucat} alt="Chintu the Cat" />
-          <h2>ChintuVerse</h2>
+          <h2>Manoojjj</h2>
         </div>
         <div className="register-form">
           <form onSubmit={handleRegister}>
