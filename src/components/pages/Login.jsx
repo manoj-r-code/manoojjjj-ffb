@@ -125,7 +125,7 @@ function Login() {
       audio.play();
       // navigate("/home"); // 👈 After successful login, redirect to Home
       setTimeout(() => {
-        navigate("/home");
+        navigate("/gallery");
       }, 2000);
     } catch (err) {
       console.error(err);

@@ -24,7 +24,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import ThemeToggle from "./ThemeToggle";
 import { PawPrint } from "lucide-react";
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
 
 function NavBar() {
@@ -35,7 +35,6 @@ function NavBar() {
     navigate("/"); // Redirect to login
   };
   const [isAdmin, setIsAdmin] = useState(false);
-
 
   useEffect(() => {
     // 1. Fetch media on load
@@ -62,17 +61,11 @@ function NavBar() {
         <span className="brand-name">Manoojjj</span>
       </div>
       <div className="nav-center">
-        <Link to="/home"></Link>
         <Link to="/gallery">Gallery</Link>
+        <Link to="/home"></Link>
         {/* <Link to="/fav">Favourites</Link> */}
         <Link to="/game"></Link>
-        {isAdmin ? (
-        <Link to="/admin">Admin</Link>
-      ) : (
-        <div>
-        
-        </div>
-      )}
+        {isAdmin ? <Link to="/admin">Admin</Link> : <div></div>}
 
         {/* <Link to="/chintu">Chintu</Link> */}
       </div>

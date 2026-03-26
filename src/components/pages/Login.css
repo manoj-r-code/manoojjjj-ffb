@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mandaic&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 .login-page {
-  background: linear-gradient(to bottom right, #634f5a, #9478c4);
+  background: linear-gradient(to bottom right, #212021, #5a467c);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .login-container {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #5abee9, #a2b6bc, #5e7680);
   padding: 2rem;
   border-radius: 2rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
