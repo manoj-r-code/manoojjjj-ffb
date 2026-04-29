@@ -32,6 +32,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./components/pages/Home";
 import GameBoard from "./components/pages/Game";
 import Gallery from "./components/pages/Gallery";
+import Images from "./components/pages/Images";
+import Videos from "./components/pages/Videos";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import Admin from "./components/pages/Admin";
@@ -68,6 +70,22 @@ function App() {
             element={
               <ProtectedRoute>
                 <Gallery />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/images"
+            element={
+              <ProtectedRoute>
+                <Images />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/videos"
+            element={
+              <ProtectedRoute>
+                <Videos />
               </ProtectedRoute>
             }
           />

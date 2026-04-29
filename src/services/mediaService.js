@@ -75,6 +75,26 @@ export const fetchMedia = async () => {
   }
 };
 
+export const fetchImages = async () => {
+  try {
+    const res = await axios.get(`${BASE_URL}/images`, getAuthHeaders());
+    return res.data;
+  } catch (err) {
+    console.error("Fetch images failed:", err?.response?.data || err.message);
+    return [];
+  }
+};
+
+export const fetchVideos = async () => {
+  try {
+    const res = await axios.get(`${BASE_URL}/videos`, getAuthHeaders());
+    return res.data;
+  } catch (err) {
+    console.error("Fetch videos failed:", err?.response?.data || err.message);
+    return [];
+  }
+};
+
 export const deleteMedia = async (id) => {
   try {
     const res = await axios.delete(
