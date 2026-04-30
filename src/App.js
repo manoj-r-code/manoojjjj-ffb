@@ -34,6 +34,7 @@ import GameBoard from "./components/pages/Game";
 import Gallery from "./components/pages/Gallery";
 import Images from "./components/pages/Images";
 import Videos from "./components/pages/Videos";
+import Random from "./components/pages/Random";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import Admin from "./components/pages/Admin";
@@ -86,6 +87,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Videos />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/random"
+            element={
+              <ProtectedRoute>
+                <Random />
               </ProtectedRoute>
             }
           />

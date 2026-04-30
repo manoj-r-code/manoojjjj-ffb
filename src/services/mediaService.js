@@ -95,6 +95,16 @@ export const fetchVideos = async () => {
   }
 };
 
+export const fetchAllMedia = async () => {
+  try {
+    const res = await axios.get(`${BASE_URL}/getmedia`, getAuthHeaders());
+    return res.data;
+  } catch (err) {
+    console.error("Fetch all media failed:", err?.response?.data || err.message);
+    return [];
+  }
+};
+
 export const deleteMedia = async (id) => {
   try {
     const res = await axios.delete(

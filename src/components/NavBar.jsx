@@ -61,8 +61,9 @@ function NavBar() {
         <span className="brand-name">Manoojjj</span>
       </div>
       <div className="nav-center">
-        <Link to="/images">Images</Link>
-        <Link to="/videos">Videos</Link>
+        <Link to="/images">Snaps</Link>
+        <Link to="/videos">Clips</Link>
+        <Link to="/random">Magic</Link>
         <Link to="/home"></Link>
         {/* <Link to="/fav">Favourites</Link> */}
         <Link to="/game"></Link>
