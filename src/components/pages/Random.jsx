@@ -7,7 +7,6 @@ import { fetchAllMedia } from "../../services/mediaService";
 const Random = () => {
   const [media, setMedia] = useState([]);
   const [currentItem, setCurrentItem] = useState(null);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const loadMedia = async () => {
@@ -24,13 +23,8 @@ const Random = () => {
       alert("No media available in the gallery!");
       return;
     }
-
-    setIsAnimating(true);
-    setTimeout(() => {
-      const randomItem = media[Math.floor(Math.random() * media.length)];
-      setCurrentItem(randomItem);
-      setIsAnimating(false);
-    }, 300);
+    const randomItem = media[Math.floor(Math.random() * media.length)];
+    setCurrentItem(randomItem);
   };
 
   return (
